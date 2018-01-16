@@ -16,6 +16,10 @@ namespace MySecondConsoleApp
 
             foreach(var child in children)
             {
+                if (child.Name = "Suzie")
+                {
+                    continue;
+                }
                 Console.WriteLine($"{child.Name} is {(child.Sick ? "sick" : "healthy")}");
                 Console.WriteLine(child.ForgeASickNote());
             }
